@@ -64,6 +64,10 @@ code {
   text-align: center
 }
 
+.cart-image {
+    height: 30px;
+}
+
 .cupcake-form {
   position:initial;
   width: 65%;

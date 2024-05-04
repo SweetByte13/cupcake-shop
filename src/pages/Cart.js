@@ -1,10 +1,9 @@
-
+import React, { useState, useEffect } from "react"
 
 function Cart() {
 
-
     return (
-        <ItemsInCart />
+
     )
 }
 export default Cart;

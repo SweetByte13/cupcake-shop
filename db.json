@@ -3,26 +3,29 @@
         {
             "id": 1,
             "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
-            "name": "Vanilla Bean cupcake",
-            "price": 5.00,
+            "name": "Vanilla Bean Cupcake",
+            "price": 5.50,
             "flavor": "vanilla bean",
-            "details": "fluffy vanilla bean cupcake"
+            "details": "fluffy vanilla bean cupcake",
+            "rating":9
         },
         {
             "id": 2,
             "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
             "name": "Devil's Chocolate Cupcake",
-            "price": 5.00,
+            "price": 6.00,
             "flavor": "devil's chocolate",
-            "details": "fluffy devil's chocolate cupcake"
+            "details": "fluffy devil's chocolate cupcake",
+            "rating":8
         },
         {
             "id": 3,
             "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
             "name": "Carrot Cake Cupcake",
-            "price": 5.00,
+            "price": 5.99,
             "flavor": "carrot cake",
-            "details": "fluffy carrot cake cupcake"
+            "details": "fluffy carrot cake cupcake",
+            "rating":6.5
         },
         {
             "id": 4,
@@ -30,23 +33,26 @@
             "name": "Cinnamon Cupcake",
             "price": 5.00,
             "flavor": "cinnamon",
-            "details": "fluffy cinnamon cupcake"
+            "details": "fluffy cinnamon cupcake",
+            "rating":6
         },
         {
             "id": 5,
             "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
             "name": "Red Velvet Cupcake",
-            "price": 5.00,
+            "price": 6.50,
             "flavor": "red velvet",
-            "details": "fluffy red velvet cupcake"
+            "details": "fluffy red velvet cupcake",
+            "rating":8.5
         },
         {
             "id":6,
             "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
             "name":"Key Lime Cupcake",
-            "price": 5.00,
+            "price": 5.25,
             "flavor":"key lime",
-            "details":"fluffy key lime cupcake"
+            "details":"fluffy key lime cupcake",
+            "rating":7
             }
     ]
 }
