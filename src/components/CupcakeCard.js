@@ -1,51 +1,67 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
 function CupcakeCard({ cupcake }) {
 
-  const { name, image, price } = cupcake
+  const { id, name, image, price } = cupcake
 
   const [amountInCart, setAmountInCart] = useState(0)
 
+  useEffect(() => {
+    let cartCupCakeAmount = localStorage.getItem(JSON.stringify(cupcake));
+    if(cartCupCakeAmount !== null){
+      setAmountInCart(parseInt(cartCupCakeAmount))
+    }
+  }, [])
 
   function handleAddToCartButton(e) {
 
-console.log(amountInCart)
-return (
-  setAmountInCart(amountInCart)
-)
+    console.log(amountInCart)
+    
+    setAmountInCart(amountInCart)
+    
     //add to cart will update number on shopping cart icon-STILL NEED
+
+    localStorage.setItem(JSON.stringify(cupcake), amountInCart)
+
   }
 
   function handleDecreaseButton() {
 
     if (amountInCart >= 1) {
-     return setAmountInCart(amountInCart-1)
+      localStorage.setItem(JSON.stringify(cupcake), amountInCart - 1)
+      setAmountInCart(amountInCart - 1)
+      
     }
   }
 
   function handleIncreaseButton() {
 
     if (amountInCart >= 0) {
-     return setAmountInCart(amountInCart +1)
+      return setAmountInCart(amountInCart + 1)
     }
   }
 
+  return (
 
-return (
-  <div className="card" >
-    <img src={image} alt={name} className="cupcake-images" />
-    <h4>{name}</h4>
-    <p>Price: ${price}</p>
-    <div aria-live="assertive" className="box quantity">
-      <button className="plus-minus-button" onClick={() => handleDecreaseButton()}>  -  </button>
-      <span> {amountInCart} </span>
-      <button className="plus-minus-button" onClick={() => handleIncreaseButton()}>  +  </button>
-    </div>
-    <button  onClick={(e) => handleAddToCartButton(e)}>Add to Cart</button>
-  </div>
-
-)
+    <Card style={{ width: '18rem' }} className="cupcake-card">
+      <Card.Img variant="top" src={image} className="cupcake-images" />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text className="cupcake-price">
+          Price: ${price}
+          <div className="amount-in-cart">{amountInCart === 0 ? "" : amountInCart}</div>
+        </Card.Text>
+        <Button className="plus-minus-button" onClick={() => handleDecreaseButton()} variant="warning"> - </Button>
+        <Button className="cupcake-card-button" onClick={(e) => handleAddToCartButton(e)} variant="light">Add to Cart</Button>
+        <Button className="plus-minus-button" onClick={() => handleIncreaseButton()} variant="warning"> + </Button>
+      </Card.Body>
+    </Card>
+  );
 }
 
 export default CupcakeCard;

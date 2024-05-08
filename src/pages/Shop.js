@@ -3,8 +3,10 @@ import NavBar from "../components/NavBar";
 import CupcakeContainer from "../components/CupcakeContainer";
 import ReviewForm from "../components/ReviewForm";
 import DropdownFilter from "../components/DropdownFilter";
+import ReviewsContainer from "../components/ReviewsContainer";
 
 function Shop({cupcakes, setCupcakes}) {
+  const [reviews, setReviews] = useState([]);
 
   return (
     <div className="Shop">
@@ -16,8 +18,9 @@ function Shop({cupcakes, setCupcakes}) {
         <div>
           <DropdownFilter cupcakes={cupcakes} setCupcakes={setCupcakes}/>
         </div>
-        <CupcakeContainer cupcakes={cupcakes} />;
-        <ReviewForm />
+        <ReviewsContainer reviews={reviews} setReviews={setReviews}/>
+        <CupcakeContainer cupcakes={cupcakes}/>;
+        <ReviewForm reviews={reviews}  setReviews={setReviews}/>
       </main>
     </div>
   )

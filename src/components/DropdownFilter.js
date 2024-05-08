@@ -29,9 +29,9 @@ function DropdownFilter({ cupcakes, setCupcakes }) {
     }
 
     return (
-        <div>
+        <div className='selector-containter'>
             <label htmlFor="filter">Filter: </label>
-            <select name="filter" value={filter} onChange={handleChangeFilter}>
+            <select className= "select" name="filter" value={filter} onChange={handleChangeFilter}>
                 <option value="">Select</option>
                 <option value="topsellers">Recommended</option>
                 <option value="rating">Best Seller</option>

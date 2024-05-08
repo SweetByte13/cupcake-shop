@@ -5,80 +5,215 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} 
+
+/* cart */
+.cart-image {
+  height: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cart-container {
+  display: grid;
+  place-items: center;
+  padding-top: 10%;
 }
 
-.body {
-  min-height: 100%;
-  min-width: 100%;
+.cart-list {
+border-style: dotted;
+padding-block: 20px;
+padding-inline: 20px;
+
 }
 
-.navbar {
-  font-size: 2.5em;
-  font-weight: 900;
-  text-align: center;
-  padding: 0.5rem 0;
+.cupcake-prices-in-cart{
+  margin-left: 90%;
 }
+
+.amount {
+  display: grid;
+  place-items: center;
+  margin-left: 100px;
+}
+
+.price {
+  display: grid;
+  place-items: center;
+  margin-left: 400px;
+}
+
+.place-order-button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.clear-cart-button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+/* shop page */
+
+/* Shop */
 
 .Shop-header {
   font-size: 2.5em;
   font-weight: 900;
   text-align: center;
-  padding: 0.5rem 0;
+  padding:50px;
+  background-color: antiquewhite;
 }
 
 .cupcake-images {
   height: 306px;
   object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
-.card-container {
-  display: grid;
-  max-width: none;
+.cupcake-container {
+  max-width: 1000px;
+  margin-left:30%;
+  margin-right: auto;
+}
+
+.cupcake-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* reviews */
+.review-container {
   grid-column: span 9;
-  grid-template-columns: repeat(4, 1fr);
-  width: 1600px;
-  height: 1500px;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  min-width: 0;
+  width: 160px;
+  height: 150px;
+  justify-content: right;
+  align-items: right;
   box-sizing: border-box;
-  
 }
 
-.card {
-  position: relative;
+.review-card {
+  border-style: double;
+  margin-left: 10%;
+  text-align: center;
+}
+
+
+/* review form */
+.review-form {
+  position: center;
+  width: 800px;
+  height: 300px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .7);
-  transform-style: preserve-3d;
-  transition: all .8s ease;
   margin: 10px auto;
-  height: 306px;
-  object-fit: cover;
-  text-align: center
+  text-align: center;
+  padding: 5px 10px;
 }
 
-.cart-image {
-    height: 30px;
+/* inputs */
+input {
+  width: 80%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
-.cupcake-form {
-  position:initial;
-  width: 65%;
-  height: 80%;
-  background-color:white;
+
+/* shop dropdown selector */
+.select {
+  width: 20%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.selector-containter {
+  width: 80%;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width:1320px;
+  box-sizing: border-box;
+  place-items: center;
+  display: grid;
+}
+
+/* career page */
+.career-header {
+display:grid;
+background-color: antiquewhite;
+padding-top: 1.5%;
+padding-bottom: 1.5%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.our-team {
+  margin-left: auto;
+  margin-right: auto;
+  width:1320px;
+  padding-left: 80px;
+  place-items: left;
+  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.our-saying {
+  margin-left: auto;
+  margin-right: auto;
+  width:1320px;
+  padding-right: 80px;
+  place-items: right;
+  text-align: right;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.career-container {
+  display: grid;
+  place-items: center;
+  position: initial;
+  width: 800px;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.career-form {
+  position: initial;
+  width: 800px;
+  height: 300px;
+  background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .7);
-  transform-style: preserve-3d;
-  transition: all .8s ease;
   margin: 10px auto;
+  text-align: center;
+  padding: 5px 10px;
 }
+
+
+/* About */
+
+.top-of-page-banner {
+  background-color: antiquewhite;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  text-align: center;
+}
+
+.content-block-wrapper{
+  display: grid;
+  place-items: center;
+}
+
+.content-block-text {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* game components */
 .table {
   grid-area: tb;
   background-image: url("https://media.istockphoto.com/id/491606503/photo/overhead-view-of-light-brown-wooden-table.jpg?s=612x612&w=0&k=20&c=xYvhXlzscGiwIK5q9g8UcgTtkq3i7ErMwQo5EbqGuk8=");
@@ -89,10 +224,12 @@ code {
   width: 700px;
   margin: auto;
 }
+
 .sprinkles {
   max-width: 100%;
   height: auto;
 }
+
 .marshmallows {
   max-width: 100%;
   height: auto;
