@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} 
+}
 
 /* cart */
 .cart-image {
@@ -15,17 +15,20 @@ body {
 .cart-container {
   display: grid;
   place-items: center;
-  padding-top: 10%;
+  margin-top: 60px;
 }
 
 .cart-list {
-border-style: dotted;
-padding-block: 20px;
-padding-inline: 20px;
+  border-style: dotted;
+  padding-block: 20px;
+  padding-inline: 20px;
+}
+
+.items-in-cart {
 
 }
 
-.cupcake-prices-in-cart{
+.cupcake-prices-in-cart {
   margin-left: 90%;
 }
 
@@ -35,6 +38,11 @@ padding-inline: 20px;
   margin-left: 100px;
 }
 
+.total-in-cart {
+ text-align: right;
+ font-weight: 600;
+}
+
 .price {
   display: grid;
   place-items: center;
@@ -42,11 +50,33 @@ padding-inline: 20px;
 }
 
 .place-order-button {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 10px;
+  margin-bottom: 100px;
+  margin-right: 10px;
 }
 
 .clear-cart-button {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.banner-container {
+  background-color: rgb(235, 211, 215);
+}
+
+.cart-bottom-banner {
+  padding-bottom: 150px;
+  padding-top: 30px;
+  width:650px;
+  margin-top: 55px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("https://www.shutterstock.com/image-vector/happy-mothers-day-sale-banner-260nw-1940755933.jpg");
 }
 
 /* shop page */
@@ -57,7 +87,8 @@ padding-inline: 20px;
   font-size: 2.5em;
   font-weight: 900;
   text-align: center;
-  padding:50px;
+  padding-top: 115px;
+  padding-bottom: 60px;
   background-color: antiquewhite;
 }
 
@@ -69,44 +100,88 @@ padding-inline: 20px;
 
 .cupcake-container {
   max-width: 1000px;
-  margin-left:30%;
+  margin-left:auto;
   margin-right: auto;
 }
 
 .cupcake-card {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
 }
 
 /* reviews */
 .review-container {
   grid-column: span 9;
-  width: 160px;
-  height: 150px;
+  width: 300px;
+  height: 30px;
   justify-content: right;
-  align-items: right;
   box-sizing: border-box;
+  padding-left: 4%;
+}
+
+.review-inner-container {
+  overflow-y: auto;
+  direction:rtl;
+  max-height: 1400px;
+  width: 100%;
+  padding-left: 6px;
 }
 
 .review-card {
   border-style: double;
-  margin-left: 10%;
   text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+.details {
+  font-style: oblique;
+}
+
+.name {
+  font-weight: 500;
+}
 
 /* review form */
 .review-form {
   position: center;
   width: 800px;
-  height: 300px;
+  height: 500px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .7);
-  margin: 10px auto;
+  margin: auto;
   text-align: center;
-  padding: 5px 10px;
+  padding: 15px 20px;
+  margin-top: 90px;
+  margin-bottom: 100px;
 }
+
+.review-form-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.review-button {
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.textarea {
+  width: 80%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  max-height: 200px
+}
+
 
 /* inputs */
 input {
@@ -118,12 +193,18 @@ input {
 
 
 /* shop dropdown selector */
+.filter {
+  font-weight: 500;
+  font-size: large;
+}
+
 .select {
   width: 20%;
   padding: 6px 10px;
-  border: none;
+  border: 0;
   border-radius: 4px;
   background-color: #f1f1f1;
+  margin-top: 10px;
 }
 
 .selector-containter {
@@ -131,34 +212,36 @@ input {
   padding: 5px 10px;
   margin-left: auto;
   margin-right: auto;
-  width:1320px;
+  width: 1320px;
   box-sizing: border-box;
   place-items: center;
   display: grid;
+  margin-top: 30px;
 }
 
 /* career page */
 .career-header {
-display:grid;
-background-color: antiquewhite;
-padding-top: 1.5%;
-padding-bottom: 1.5%;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  background-color: antiquewhite;
+  padding-top: 5%;
+  padding-bottom: 1.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .our-team {
   margin-left: auto;
   margin-right: auto;
-  width:1320px;
+  width: 1320px;
   padding-left: 80px;
   place-items: left;
   text-align: left;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .our-saying {
   margin-left: auto;
   margin-right: auto;
-  width:1320px;
+  width: 1320px;
   padding-right: 80px;
   place-items: right;
   text-align: right;
@@ -180,7 +263,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .career-form {
   position: initial;
   width: 800px;
-  height: 300px;
+  height: 500px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .7);
@@ -189,17 +272,33 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   padding: 5px 10px;
 }
 
+.form-title {
+  margin-top: 30px;
+}
+
+.input-reason {
+  padding-bottom: 20%;
+}
+
+.form-button {
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.titles-career-page {
+  font-weight: 700;
+}
 
 /* About */
 
 .top-of-page-banner {
   background-color: antiquewhite;
-  padding-top: 1.5%;
+  padding-top: 5%;
   padding-bottom: 1.5%;
   text-align: center;
 }
 
-.content-block-wrapper{
+.content-block-wrapper {
   display: grid;
   place-items: center;
 }
@@ -213,24 +312,88 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   margin-right: auto;
 }
 
-/* game components */
-.table {
-  grid-area: tb;
-  background-image: url("https://media.istockphoto.com/id/491606503/photo/overhead-view-of-light-brown-wooden-table.jpg?s=612x612&w=0&k=20&c=xYvhXlzscGiwIK5q9g8UcgTtkq3i7ErMwQo5EbqGuk8=");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 428px;
-  width: 700px;
-  margin: auto;
+.phonenumber {
+  color: blue;
 }
 
-.sprinkles {
-  max-width: 100%;
-  height: auto;
+.location-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.marshmallows {
-  max-width: 100%;
-  height: auto;
+.locations {
+  columns: 2;
+}
+
+/* FAQ */
+.faqtitles {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.top-title {
+  font-size: large;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.bottom-title {
+  font-size: medium;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.faq {
+  display: grid;
+  place-items: center;
+  text-align: left;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-faq-header {
+  display: grid;
+  place-items: center;
+}
+
+.headerfaq {
+  display: grid;
+  place-items: center;
+  background-color: antiquewhite;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.bottom-banner-faq {
+  display: grid;
+  place-items: center;
+}
+
+.questions {
+  font-style: oblique;
+  font-weight: 600;
+  font-size: large;
+  text-align: center;
+}
+
+.faq-answers {
+  text-align: center;
+}
+
+.answers {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.answer-intro {
+  font-weight: 500;
 }

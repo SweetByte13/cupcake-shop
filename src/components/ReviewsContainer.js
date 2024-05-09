@@ -18,7 +18,9 @@ function ReviewsContainer({ reviews, setReviews }) {
     })
     return (
         <div className="review-container">
+            <div className="review-inner-container">
             {review}
+            </div>
         </div>
     )
     

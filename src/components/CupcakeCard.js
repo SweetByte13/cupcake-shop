@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import CurrencyInput from 'react-currency-input-field';
 
 
 function CupcakeCard({ cupcake }) {
@@ -53,12 +54,15 @@ function CupcakeCard({ cupcake }) {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text className="cupcake-price">
-          Price: ${price}
+        Price: ${price.toFixed(2)}
           <div className="amount-in-cart">{amountInCart === 0 ? "" : amountInCart}</div>
         </Card.Text>
+        <div className="buttons">
         <Button className="plus-minus-button" onClick={() => handleDecreaseButton()} variant="warning"> - </Button>
         <Button className="cupcake-card-button" onClick={(e) => handleAddToCartButton(e)} variant="light">Add to Cart</Button>
         <Button className="plus-minus-button" onClick={() => handleIncreaseButton()} variant="warning"> + </Button>
+        </div>
+
       </Card.Body>
     </Card>
   );

@@ -30,7 +30,7 @@ function DropdownFilter({ cupcakes, setCupcakes }) {
 
     return (
         <div className='selector-containter'>
-            <label htmlFor="filter">Filter: </label>
+            <label className="filter" htmlFor="filter">Filter: </label>
             <select className= "select" name="filter" value={filter} onChange={handleChangeFilter}>
                 <option value="">Select</option>
                 <option value="topsellers">Recommended</option>

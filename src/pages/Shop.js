@@ -4,6 +4,7 @@ import CupcakeContainer from "../components/CupcakeContainer";
 import ReviewForm from "../components/ReviewForm";
 import DropdownFilter from "../components/DropdownFilter";
 import ReviewsContainer from "../components/ReviewsContainer";
+import MDBanner from "../components/MDBanner";
 
 function Shop({cupcakes, setCupcakes}) {
   const [reviews, setReviews] = useState([]);
@@ -22,6 +23,7 @@ function Shop({cupcakes, setCupcakes}) {
         <CupcakeContainer cupcakes={cupcakes}/>;
         <ReviewForm reviews={reviews}  setReviews={setReviews}/>
       </main>
+      <MDBanner />
     </div>
   )
 }

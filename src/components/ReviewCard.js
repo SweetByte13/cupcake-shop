@@ -6,9 +6,9 @@ function ReviewCard({ review }) {
 
     return (
         <div className="review-card">
-            <h3>{score}</h3>
-            {details}
-            <p>{name}</p>
+            <h3 className="score">{score}</h3>
+           <span className="details">{details}</span> 
+            <p className="name">{name}</p>
         </div>
     )
 }

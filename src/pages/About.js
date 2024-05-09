@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar";
+import MDBanner from "../components/MDBanner";
 
 
 function About() {
@@ -18,39 +19,42 @@ function About() {
                 Our Story
             </h2>
             <div class="content-block-story-paragraph">
-                Since 2022, Crazy Good Cupcake Shop has been one of America’s most-cherished bakeshops and set the standard for tried-and-true desserts and baked goods.
-                Learn more about our journey from neighborhood gem to sweet success.
+            Nestled on 1234 Sugar Lane in the charming town of Sweetville, Florida, Crazy Good Cupcakes beckons with its whimsical facade and tantalizing aromas. The bakery, run by the passionate baker, Evelyn, has become a beloved local treasure. As the sun rises over the pastel-painted storefront, the scent of freshly baked cupcakes wafts through the air, drawing in patrons from all walks of life.
+Evelyn, with her flour-dusted apron and twinkling eyes, has a story as sweet as her confections. She inherited the bakery from her grandmother, who used to whip up cupcakes for the neighborhood kids. Evelyn’s love for baking blossomed as she stood on a stool, her tiny hands stirring batter in the same mixing bowl that now graces her kitchen. She vowed to honor her grandmother’s legacy by creating cupcakes that would make hearts skip a beat.
+Inside Crazy Good Cupcakes, the air is filled with warmth and laughter. The walls are adorned with vintage cake tins, sepia-toned photographs, and handwritten recipes. The wooden counter showcases an array of cupcakes, each a miniature work of art. Customers gather around, their eyes wide with anticipation, as Evelyn unveils her daily creations.
             </div>
             <br></br>
             <div>
-                <h2>Our Products</h2>
-                Crazy Good Cupcake Shop has been making America’s favorite baked goods the old-fashioned way: from scratch, in small batches, and using the finest ingredients.
-                Our assortment includes our world-famous cupcakes, seasonal flavors, devine icing, and fan-favorite toppings.
+                <h2 class="content-block-story-paragraph">Our Products</h2>
+                At Crazy Good Cupcakes, we believe in the art of sweet indulgence. Our bakery is a canvas, and our cupcakes are the masterpieces. We offer an eclectic mix of flavors that are as diverse as our beloved community in Sweetville. From the simplicity of vanilla to the richness of chocolate, each cupcake is a celebration of flavor. Our seasonal selections are a nod to the rhythms of nature, bringing the essence of each season into our bakery.
+Our toppings and frostings are the final touch, the flourish that turns a cupcake into a statement. Whether it’s the classic elegance of buttercream or the rich tang of cream cheese, we craft each topping to complement the cupcake it graces. For those seeking a twist, our array of sprinkles, nuts, and fresh berries add texture and bursts of flavor, making every bite a new discovery.
+Crazy Good Cupcakes isn’t just about the individual flavors, but the experience they create together. It’s a place where tradition meets innovation, and every visit is an opportunity to taste something wonderfully unexpected. 🧁✨
             </div>
             <br></br>
-            <div>
-                <h2>Locations</h2>
+            <h2 className="location-title">Locations</h2>
+            <div className="locations">
                 <p>
                     <div>
-                        <div>Crazy Good Cupcakes - Sweetville, FL</div>
-                        <div>Address: 1234 Sugar Lane, Sweetville, FL 33101</div>
-                        <div>Phone Number: (305) 555-0123</div>
-                        <div>Email: Email: sweettreats@crazygoodcupcakes.com</div>
+                        <h5>Crazy Good Cupcakes - Sweetville, FL</h5>
+                        <div>1234 Sugar Lane, Sweetville, FL 33101</div>
+                        <div className="phonenumber">(305) 555-0123</div>
+                        <div>sweettreats@crazygoodcupcakes.com</div>
                         <div> Hours of Operation: Mon-Fri: 8am - 8pm, Sat-Sun: 9am - 5pm</div>
                     </div>
                 </p>
 
                 <p>
                     <div>
-                        <div>Crazy Good Cupcakes - Dessert Town, FL</div>
-                        <div>Address: 5678 Treats Avenue, Dessert Town, FL 32801</div>
-                        <div>Phone Number: (407) 555-0456</div>
-                        <div>Email: bestbites@crazygoodcupcakes.com</div>
+                        <h5>Crazy Good Cupcakes - Dessert Town, FL</h5>
+                        <div>5678 Treats Avenue, Dessert Town, FL 32801</div>
+                        <div className="phonenumber">(407) 555-0456</div>
+                        <div>bestbites@crazygoodcupcakes.com</div>
                         <div>Hours of Operation: Mon-Fri: 7am - 7pm, Sat: 8am - 6pm, Sun: Closed</div>
                     </div>
                 </p>
             </div>
         </div>
+        <MDBanner />
     </div>
     )
 }

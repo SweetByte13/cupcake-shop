@@ -1,7 +1,7 @@
 {
   "Cupcakes": [
     {
-      "id": 1,
+      "id": "1",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Vanilla Bean Cupcake",
       "price": 5.5,
@@ -10,7 +10,7 @@
       "rating": 9
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Devil's Chocolate Cupcake",
       "price": 6,
@@ -19,7 +19,7 @@
       "rating": 8
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Carrot Cake Cupcake",
       "price": 5.99,
@@ -28,7 +28,7 @@
       "rating": 6.5
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Cinnamon Cupcake",
       "price": 5,
@@ -37,7 +37,7 @@
       "rating": 6
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Red Velvet Cupcake",
       "price": 6.5,
@@ -46,7 +46,7 @@
       "rating": 8.5
     },
     {
-      "id": 6,
+      "id": "6",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Key Lime Cupcake",
       "price": 5.25,
@@ -55,16 +55,16 @@
       "rating": 7
     },
     {
-      "id": 7,
+      "id": "7",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Trio of Cupcakes",
-      "price": 15.50,
+      "price": 15.5,
       "flavor": "assorted",
       "details": "an assortment of cupcakes",
       "rating": 3
     },
     {
-      "id": 8,
+      "id": "8",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "Six Pack of Cupcakes",
       "price": 29.99,
@@ -73,10 +73,10 @@
       "rating": 4
     },
     {
-      "id": 9,
+      "id": "9",
       "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
       "name": "A Dozen Cupcakes",
-      "price": 63.00,
+      "price": 63,
       "flavor": "assorted",
       "details": "an assortment of cupcakes",
       "rating": 5
@@ -84,31 +84,31 @@
   ],
   "Reviews": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Stacy B.",
       "score": "9/10",
       "details": "This charming cupcake shop is a hidden treasure. The seasonal specials are always a delight. I love stopping by to see what’s new. The pumpkin cupcake in autumn is a highlight. Definitely worth a visit!"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Tim H.",
       "score": "8.5/10",
       "details": "Crazy Good Cupcakes is my go-to spot for indulging in sweet bliss. Their cupcakes are like little bites of heaven. The frosting is perfectly whipped, and the cake itself is moist and flavorful. I can’t resist the red velvet—it’s pure magic! The cozy ambiance and friendly staff make every visit a treat."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Tina T.",
       "score": "10/10",
       "details": "I’m officially addicted to Crazy Good Cupcakes. The variety of flavors is mind-boggling—everything from classic vanilla to seasonal flavors.The cinnamon cupcake is my weakness; it strikes the perfect balance of sweet and cinnamon heat. Plus, the presentation is Instagram-worthy!"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Chad M.",
       "score": "8/10",
       "details": "I’ve tried cupcakes from many places, but this shop stands out. They offer a wide range of flavors, and each one is delicious. The key lime cupcake with its tangy frosting is my favorite. They’re also great for gifts!"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Rachel V.",
       "score": "8/10",
       "details": "This cupcake shop is a must-visit! The cupcakes are always fresh and have the perfect sweetness. I’m a fan of their chocolate variety—it’s rich without being overwhelming. The staff is welcoming, and the shop has a cozy feel to it."

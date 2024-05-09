@@ -8,7 +8,6 @@ import Shop from "./pages/Shop";
 import Careers from './pages/Careers';
 import Faq from './pages/Faq.js';
 import Cart from './pages/Cart.js';
-import CupcakeDesigner from './pages/CupcakeDesigner.js';
 import ErrorPage from './pages/ErrorPage.js';
 
 
@@ -41,11 +40,6 @@ const routes = [
     {
         path: "/cart",
         element: <Cart />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/cupcakedesignergame",
-        element: <CupcakeDesigner />,
         errorElement: <ErrorPage />
     }
 ];
