@@ -11,10 +11,10 @@ function ReviewForm({ reviews, setReviews }) {
     e.preventDefault();
 
     const newReview = {
-      "name": e.target.name.value,
-      "score": e.target.score.value,
-      "details": e.target.details.value,
-    }
+      name: formName,
+      score: formScore,
+      details: formDetails,
+    };
 
     fetch("http://localhost:8000/Reviews", {
       method: 'POST',

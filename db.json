@@ -2,7 +2,7 @@
   "Cupcakes": [
     {
       "id": "1",
-      "image": "https://joyfoodsunshine.com/wp-content/uploads/2021/12/best-vanilla-cupcakes-recipe-1x1-1.jpg",
+      "image": "https://i0.wp.com/buuckfarmsbakery.com/wp-content/uploads/2022/07/vanilla-bean-cupcake-unwrapped.jpg?resize=650%2C974&ssl=1",
       "name": "Vanilla Bean Cupcake",
       "price": 5.5,
       "flavor": "vanilla bean",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "image": "https://sugarspunrun.com/wp-content/uploads/2022/04/Best-Chocolate-Cupcakes-1-of-1.jpg",
+      "image": "https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2018/02/Ultimate-Chocolate-Cupcakes.jpg",
       "name": "Devil's Chocolate Cupcake",
       "price": 6,
       "flavor": "devil's chocolate",
@@ -74,7 +74,7 @@
     },
     {
       "id": "9",
-      "image": "https://buttercakery.com/cdn/shop/products/image_f133e0c9-6ef6-4867-a3d3-2d69cd6c0046_1024x1024@2x.heic?v=1665410182",
+      "image": "https://buttersweetcupcakes.com/wp-content/uploads/2018/01/Cupcakes-mini-dozen-no-box.png",
       "name": "A Dozen Cupcakes",
       "price": 63,
       "flavor": "assorted",
@@ -85,39 +85,39 @@
   "Reviews": [
     {
       "id": "1",
-      "name": "Stacy B.",
+      "name": "Stacy B",
       "score": "9/10",
-      "details": "This charming cupcake shop is a hidden treasure. The seasonal specials are always a delight. I love stopping by to see what’s new. The pumpkin cupcake in autumn is a highlight. Definitely worth a visit!"
+      "details": "This charming cupcake shop is a hidden treasure. The seasonal specials are always a delight. I love stopping by to see what’s new. The pumpkin cupcake in autumn is a highlight. Definitely worth a visit"
     },
     {
       "id": "2",
-      "name": "Tim H.",
+      "name": "Tim H",
       "score": "8.5/10",
-      "details": "Crazy Good Cupcakes is my go-to spot for indulging in sweet bliss. Their cupcakes are like little bites of heaven. The frosting is perfectly whipped, and the cake itself is moist and flavorful. I can’t resist the red velvet—it’s pure magic! The cozy ambiance and friendly staff make every visit a treat."
+      "details": "Crazy Good Cupcakes is my go-to spot for indulging in sweet bliss. Their cupcakes are like little bites of heaven. The frosting is perfectly whipped, and the cake itself is moist and flavorful. I can’t resist the red velvet—it’s pure magic! The cozy ambiance and friendly staff make every visit a treat"
     },
     {
       "id": "3",
-      "name": "Tina T.",
+      "name": "Tina T",
       "score": "10/10",
-      "details": "I’m officially addicted to Crazy Good Cupcakes. The variety of flavors is mind-boggling—everything from classic vanilla to seasonal flavors.The cinnamon cupcake is my weakness; it strikes the perfect balance of sweet and cinnamon heat. Plus, the presentation is Instagram-worthy!"
+      "details": "I’m officially addicted to Crazy Good Cupcakes. The variety of flavors is mind-boggling—everything from classic vanilla to seasonal flavors.The cinnamon cupcake is my weakness; it strikes the perfect balance of sweet and cinnamon heat. Plus, the presentation is Instagram-worthy"
     },
     {
       "id": "4",
-      "name": "Chad M.",
+      "name": "Chad M",
       "score": "8/10",
-      "details": "I’ve tried cupcakes from many places, but this shop stands out. They offer a wide range of flavors, and each one is delicious. The key lime cupcake with its tangy frosting is my favorite. They’re also great for gifts!"
+      "details": "I’ve tried cupcakes from many places, but this shop stands out. They offer a wide range of flavors, and each one is delicious. The key lime cupcake with its tangy frosting is my favorite. They’re also great for gifts"
     },
     {
       "id": "5",
-      "name": "Rachel V.",
+      "name": "Rachel V",
       "score": "8/10",
-      "details": "This cupcake shop is a must-visit! The cupcakes are always fresh and have the perfect sweetness. I’m a fan of their chocolate variety—it’s rich without being overwhelming. The staff is welcoming, and the shop has a cozy feel to it."
+      "details": "This cupcake shop is a must-visit! The cupcakes are always fresh and have the perfect sweetness. I’m a fan of their chocolate variety—it’s rich without being overwhelming. The staff is welcoming, and the shop has a cozy feel to it"
     },
     {
       "id": "9ad8",
-      "name": "Jack R.",
+      "name": "Jack R",
       "score": "10/10",
-      "details": "As a carrot cake enthusiast, I was thrilled to discover Crazy Good Cupcakes’ take on this classic flavor. Let me tell you, it’s spiced perfection in cupcake form! 🥕🧁"
+      "details": "As a carrot cake enthusiast, I was thrilled to discover Crazy Good Cupcakes’ take on this classic flavor. Let me tell you, it’s spiced perfection in cupcake form 🥕🧁"
     }
   ]
 }
