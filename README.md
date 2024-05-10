@@ -8,63 +8,34 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the project directory, you can run:
 
-### `npm run build`
+### `json-server --watch db.json --port 8000`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+View the dbjson by opening [http://localhost:8000](http://localhost:8000) in your browser.
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Crazy Good Cupcake Shop App is made up of a few pages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Shop: this is the main page, App file is mainly there to link Shop and so we can add other features in the future if we wanted. Most of the code is routed through Shop. 
+There's a routes file which works with the NavBar to give easy and quick access to users.
 
-### `npm run eject`
+The About, Career, and FAQ page are all structured in a similar fashion. NavBar, Header, Image, and then various <div>s and <span>s that are used for holding the text data. The <div>s and <span>s give us the ability to access esch part of the text seperatly so we can use CSS on different elements easily. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Cart page utilizes local storage to hold data from the Shop page. It keeps a tally of the items added to cart and gives a print out of the items, the amount of items, the price of each item, and a running total for the cart. We added a button which clears the cart by wiping the local storage. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We built in a Error page as well, which the user recieves if there's an error.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The Shop page is the heart of this app. It's made up of several components. There's a review form, which posts to the review container on the eft side. Most of the page is a container of cards, each containing data about a cupcake and buttons with which to add and subtract the amount of the specified cupcake the user wants; and a button which adds that amount to the cart.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The NavBar is fixed and moves with the user scrolling, so they always have easy access to the other pages. 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We are continually looking for insight into improvements and welcome suggestions.
+-Crazy Good Cupcakes
