@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import CurrencyInput from 'react-currency-input-field';
-
 
 function CupcakeCard({ cupcake }) {
-
-  const { id, name, image, price } = cupcake
-
+  const { name, image, price } = cupcake
   const [amountInCart, setAmountInCart] = useState(0)
 
   useEffect(() => {
@@ -20,15 +14,8 @@ function CupcakeCard({ cupcake }) {
   }, [])
 
   function handleAddToCartButton(e) {
-
-    console.log(amountInCart)
-    
     setAmountInCart(amountInCart)
-    
-    //add to cart will update number on shopping cart icon-STILL NEED
-
     localStorage.setItem(JSON.stringify(cupcake), amountInCart)
-
   }
 
   function handleDecreaseButton() {
@@ -36,16 +23,14 @@ function CupcakeCard({ cupcake }) {
     if (amountInCart >= 1) {
       localStorage.setItem(JSON.stringify(cupcake), amountInCart - 1)
       setAmountInCart(amountInCart - 1)
-      
     }
-  }
+  };
 
   function handleIncreaseButton() {
-
     if (amountInCart >= 0) {
       return setAmountInCart(amountInCart + 1)
     }
-  }
+  };
 
   return (
 
@@ -62,10 +47,8 @@ function CupcakeCard({ cupcake }) {
         <Button className="cupcake-card-button" onClick={(e) => handleAddToCartButton(e)} variant="light">Add to Cart</Button>
         <Button className="plus-minus-button" onClick={() => handleIncreaseButton()} variant="warning"> + </Button>
         </div>
-
       </Card.Body>
     </Card>
   );
 }
-
 export default CupcakeCard;

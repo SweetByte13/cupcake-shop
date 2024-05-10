@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CupcakeCard from "./CupcakeCard";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -22,5 +22,4 @@ function CupcakeContainer({ cupcakes }) {
         </div>
     )
 }
-
 export default CupcakeContainer;

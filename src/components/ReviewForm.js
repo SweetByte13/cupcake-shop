@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 
 function ReviewForm({ reviews, setReviews }) {
@@ -31,9 +31,7 @@ function ReviewForm({ reviews, setReviews }) {
         setFormName("");
         setFormScore("");
     })
-
   }
-
 
   return (
     <div className="review-form">
@@ -41,7 +39,6 @@ function ReviewForm({ reviews, setReviews }) {
       <form onSubmit={(e) => handleFormSubmit(e)}>
         <input type="text" name="name" placeholder="Name" value={formName} onChange={(e) => setFormName(e.target.value)} />
         <input type="text" name="score" placeholder="Rate us out of 10" value={formScore} onChange={(e) => setFormScore(e.target.value)}/>
-        {/* <input className="review-input" type="text" name="details" step="0.01" value={formDetails} placeholder="Write us a Review..." onChange={(e) => setFormDetails(e.target.value)}/> */}
         <textarea className="textarea" rows = "5" cols = "60" name = "description" placeholder="Write us a Review..." value={formDetails} onChange={(e) => setFormDetails(e.target.value)}>
          </textarea><br></br>
         <button className="review-button" type="submit">Submit Review</button>
@@ -49,5 +46,4 @@ function ReviewForm({ reviews, setReviews }) {
     </div>
   )
 }
-
 export default ReviewForm;

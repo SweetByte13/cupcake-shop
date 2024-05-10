@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
-import ReviewForm from "./ReviewForm";
+import React, { useEffect } from "react";
 import ReviewCard from "./ReviewCard";
 
 
 function ReviewsContainer({ reviews, setReviews }) {
-
-
 
     useEffect(() => {
         fetch("http://localhost:8000/Reviews")
@@ -23,6 +20,5 @@ function ReviewsContainer({ reviews, setReviews }) {
             </div>
         </div>
     )
-    
 }
 export default ReviewsContainer;

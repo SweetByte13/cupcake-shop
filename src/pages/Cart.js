@@ -10,25 +10,20 @@ function Cart() {
 
     const cupcakeItems = []
 
-    function add(accumulator, a) {
-        console.log(a)
-        console.log(accumulator)
-        return (accumulator + a.price)
-    }
-
-
     useEffect(() => {
         const items = Object.keys(localStorage)
+        let cartTotal = 0
         const itemComponents = items.map(item => {
             let cupcake = JSON.parse(item)
             let amount = localStorage.getItem(item);
             cupcakeItems.push(cupcake)
+            cartTotal += cupcake.price * amount;
             return (
                 <div key={cupcake.id}>{cupcake.name}: {amount}  <div className="price">${cupcake.price.toFixed(2)}</div>
                 </div>)
         })
         setCartItems(itemComponents);
-        setTotalInCart([...cupcakeItems].reduce(add, 0))
+        setTotalInCart(cartTotal)
     }, [])
 
     function handleClearCart() {

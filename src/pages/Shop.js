@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import NavBar from "../components/NavBar";
 import CupcakeContainer from "../components/CupcakeContainer";
 import ReviewForm from "../components/ReviewForm";

@@ -24,10 +24,9 @@ function DropdownFilter({ cupcakes, setCupcakes }) {
             default:
                 sortedCupcakes = [...cupcakes];
         }
-
         setCupcakes(sortedCupcakes);
     }
-
+    
     return (
         <div className='selector-containter'>
             <label className="filter" htmlFor="filter">Filter: </label>
@@ -41,5 +40,4 @@ function DropdownFilter({ cupcakes, setCupcakes }) {
         </div>
     );
 }
-
 export default DropdownFilter;
