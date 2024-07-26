@@ -6,7 +6,7 @@ function CupcakeCard({ cupcake }) {
   const { name, image, price } = cupcake
   const [amountInCart, setAmountInCart] = useState(0)
 
-  useEffect(() => {
+  useEffect((cupcake) => {
     let cartCupCakeAmount = localStorage.getItem(JSON.stringify(cupcake));
     if(cartCupCakeAmount !== null){
       setAmountInCart(parseInt(cartCupCakeAmount))
@@ -16,10 +16,9 @@ function CupcakeCard({ cupcake }) {
   function handleAddToCartButton(e) {
     setAmountInCart(amountInCart)
     localStorage.setItem(JSON.stringify(cupcake), amountInCart)
-  }
+  };
 
   function handleDecreaseButton() {
-
     if (amountInCart >= 1) {
       localStorage.setItem(JSON.stringify(cupcake), amountInCart - 1)
       setAmountInCart(amountInCart - 1)
@@ -33,7 +32,6 @@ function CupcakeCard({ cupcake }) {
   };
 
   return (
-
     <Card style={{ width: '18rem' }} className="cupcake-card">
       <Card.Img variant="top" src={image} className="cupcake-images" />
       <Card.Body>

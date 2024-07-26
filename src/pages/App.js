@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Shop from './Shop';
 
 function App() {
-// test
-// BIG TEST
 const [cupcakes, setCupcakes] = useState([]);
 
   useEffect(() => {
